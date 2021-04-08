@@ -1,6 +1,6 @@
 debug: false
 example:
-  param: false
+  param: true
 grpc:
   server:
     healthServiceEnabled: true

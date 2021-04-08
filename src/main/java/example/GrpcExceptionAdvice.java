@@ -7,7 +7,6 @@ import net.devh.boot.grpc.server.advice.GrpcExceptionHandler;
 import org.springframework.beans.factory.annotation.Value;
 
 @GrpcAdvice
-@SuppressWarnings("unused")
 public class GrpcExceptionAdvice {
     private final boolean exampleParam;
 

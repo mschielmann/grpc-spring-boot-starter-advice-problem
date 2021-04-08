@@ -13,7 +13,6 @@ public class Service2 extends ExampleService2Grpc.ExampleService2ImplBase {
     public void exampleMethod(ExampleMethodRequest request,
                               StreamObserver<ExampleMethodResponse> responseObserver) {
         System.out.println("Service2");
-        responseObserver.onNext(ExampleMethodResponse.newBuilder().build());
-        responseObserver.onCompleted();
+        responseObserver.onError(new RuntimeException());
     }
 }
