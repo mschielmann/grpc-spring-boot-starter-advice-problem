@@ -1,0 +1,16 @@
+debug: false
+example:
+  param: false
+grpc:
+  server:
+    healthServiceEnabled: true
+    reflectionServiceEnabled: true
+    port: 9090
+    shutdownGracePeriod: 30s
+  client:
+    service2:
+      address: "static://localhost:9090"
+      negotiationType: PLAINTEXT
+    service3:
+      address: "static://localhost:9090"
+      negotiationType: PLAINTEXT

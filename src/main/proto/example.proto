@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package example.service;
+
+option java_package = "example.proto";
+option java_multiple_files = true;
+
+
+service ExampleService1 {
+  rpc ExampleMethod(ExampleMethodRequest) returns (ExampleMethodResponse);
+}
+
+service ExampleService2 {
+  rpc ExampleMethod(ExampleMethodRequest) returns (ExampleMethodResponse);
+}
+
+message ExampleMethodRequest {
+
+}
+
+message ExampleMethodResponse {
+
+}
